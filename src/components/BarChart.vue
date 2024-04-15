@@ -19,6 +19,10 @@ import { Line } from 'vue-chartjs';
         labels: {
             type: Array<string>,
             required: true
+        },
+        label: {
+            type: String,
+            required: true
         }
     });
 
@@ -26,7 +30,7 @@ import { Line } from 'vue-chartjs';
         return {
             datasets: [{
                 data:[...props.dataSets],
-                label: 'Test',
+                label: props.label,
                 borderColor: '#f87979',
                 backgroundColor: 'rgba(255, 99, 132, 0.2)',
                 fill: true
