@@ -11,6 +11,7 @@
     "@mdi/font": "6.2.95",
     "chart.js": "^4.4.2",
     "core-js": "^3.34.0",
+    "mqtt": "^5.5.2",
     "roboto-fontface": "*",
     "vue": "^3.4.21",
     "vue-chartjs": "^5.3.0",

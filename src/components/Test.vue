@@ -5,6 +5,7 @@
 
 <script setup lang="ts">
     import { ref } from 'vue';
+    import mqtt from "mqtt";
 
     const labels = ref([ '', '', '' ]);
     const datasets= ref([40, 20, 12]);
@@ -12,4 +13,5 @@
         datasets.value.push(50);
         labels.value.push('');
     }
+    const client = mqtt.connect("localhost");
 </script>
