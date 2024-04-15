@@ -27,7 +27,9 @@ import { Line } from 'vue-chartjs';
             datasets: [{
                 data:[...props.dataSets],
                 label: 'Test',
-                borderColor: '#f87979'
+                borderColor: '#f87979',
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                fill: true
             }],
             labels:[...props.labels]
         }
